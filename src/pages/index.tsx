@@ -1,3 +1,4 @@
+import SEO from '@/components/SEO';
 import { useEffect, useState } from 'react';
 import { Title } from '../styles/pages/Home';
 
@@ -17,7 +18,11 @@ export default function Home() {
 
   return (
     <div>
-      <Title>Hello World</Title>
+      <SEO 
+        title="DevCommerce, your best e-commerce!"
+        image="boost.png" 
+        shouldExcludeTitleSuffix
+      />
 
       <section>
         <Title>Products</Title>
